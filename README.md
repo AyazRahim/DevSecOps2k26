@@ -518,4 +518,4 @@ Then trigger a push to `main` and check **Actions → Terraform Deployment**.
 
 **Ayaz Rahim**
 
-DevOps Engineer | DevSecOps Practices | Kubernetes | Terraform | AWS | Azure | CI/CD Automation | DevSecOps
+DevOps Engineer | DevSecOps Practices | Kubernetes | Terraform | AWS | Azure | CI/CD Automation 
