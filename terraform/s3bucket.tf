@@ -12,7 +12,7 @@ terraform {
 }
 
 provider "aws" {
-  region = "ap-southeast-1"
+  region = "us-east-1"
   # Credentials injected via env vars by CI: AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY
 }
 
