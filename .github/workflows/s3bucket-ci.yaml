@@ -35,6 +35,7 @@ jobs:
           url: http://54.254.159.79:8200
           method: jwt
           role: gh-actions-role
+          jwtGithubAudience: https://github.com/AyazRahim
           secrets: |
             aws/creds/terraform-role access_key | AWS_ACCESS_KEY_ID ;
             aws/creds/terraform-role secret_key | AWS_SECRET_ACCESS_KEY ;
