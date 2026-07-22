@@ -1,12 +1,19 @@
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0"
+    }
+    random = {
+      source  = "hashicorp/random"
+      version = "~> 3.0"
+    }
+  }
+}
+
 provider "aws" {
   region = "us-east-1"
-
-  # Credentials are injected via environment variables by the CI pipeline:
-  # AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_SESSION_TOKEN
-  # Skip the STS GetCallerIdentity call that fails with dynamic Vault credentials
-  skip_credentials_validation = true
-  skip_requesting_account_id  = true
-  skip_metadata_api_check     = true
+  # Credentials injected via env vars by CI: AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY
 }
 
 resource "random_id" "bucket_suffix" {
